@@ -27,7 +27,7 @@ echo "$colors[1]";
 
 //2 podmínky a logika
 //6
-$score = "";
+$score = "70";
 if ($score >90) {
     echo "Výborně";
 } elseif ($score >= 60 && $score <= 89) {
@@ -45,7 +45,7 @@ if ($x % 2 == 0) {
 }
 
 //8
-if (str_starts_with($name, "M")) {
+if (str_starts_with($name, "A")) {
     echo "$name začíná na písmeno A";
 } else {
     echo "$name nezačíná na písmeno A";
@@ -80,7 +80,7 @@ function isEven($num) {
 }
 
 //14
-$numbers1 = [18, 65, 11,];
+$numbers = [18, 65, 11,];
 function average($numbers) {
     return array_sum();
 }
@@ -90,7 +90,7 @@ $string = "nejneobhospodařovávatelnější";
 
 function countVowels ($string) {
     $count = 0;
-    $vowels = ["a", "e", "i", "o", "u", "y", "á", "é", "í", "ó", "ú", "ů", "ý"];
+    $vowels = ["a", "e", "i", "o", "u", "y", "á", "é", "í", "ó", "ú", "ů", "ý", "A", "E", "I", "O", "U", "Y", "Á", "É", "Í", "Ó", "Ú", "Ů", "Ý",];
 
     $letter = str_split($string);
 
@@ -113,10 +113,10 @@ $upperCaseWord = ucfirst($word);
 
 //18
 $sentence = "Laravel je PHP framework.";
-$numA = substr_count($sentence, "a");
+$countA = substr_count($sentence, "a");
 
 //19
-$larContains = str_contains($sentence, "Laravel");
+$containsLaravel = str_contains($sentence, "Laravel");
 
 //20
 $replaceEwith3= str_replace("e", "3", $sentence);
@@ -125,15 +125,15 @@ $replaceEwith3= str_replace("e", "3", $sentence);
 //21
 $numbers2 = [1, 2, 3, 4, 5];
 
-$numbers2x2 = array_map(function($cislo) {
-    return $cislo * 2;
+$doubledNumbers2 = array_map(function($num) {
+    return $num * 2;
 }, $numbers2);
 
-print_r($numbers2x2);
+print_r($doubledNumbers2);
 
 //22
 $names = ["Eva", "Jan", "Eva", "Petr"];
-$names2 = array_unique($names);
+$noDuplicateNames = array_unique($names);
 
 //23
 $a = [1, 2];
@@ -147,7 +147,7 @@ if (in_array("Jan", $names)) {
 
 //25
 $numbers3 = [9, 2, 5, 1,];
-$numbers3sorted = sort($numbers3);
+$sortedNumbers3 = sort($numbers3);
 
 //26
 $words = ["monitor", "klávesnice", "myš",];
