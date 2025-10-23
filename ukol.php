@@ -53,7 +53,7 @@ if (str_starts_with($name, "M")) {
 
 //9
 $loggedIn = false;
-echo $loggedIn ? "Odhlášen" : "Přihlášen";
+echo $loggedIn ? "Přihlášen" : "Odhlášen";
 
 //10
 $items = [];
