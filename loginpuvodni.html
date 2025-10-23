@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Přihlašovací formulář</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="mx-auto bg-zinc-100">
+    <main class="ml-8">
+    <h1 class="text-4xl font-bold text-stone-500 my-4"> Přihlášení</h1>
+    <form action="login.php" method="POST" class="font-bold">
+        <label for="email">Přihlašovací e-mail</label><br>
+        <input id="email" type="email" name="email" placeholder="jmeno@email.cz" required
+        class="border border-zinc-500 mb-8"><br>
+       
+        <label for="password">Heslo</label><br>
+        <input id="password" type="password" name="password" required><br>
+      
+        <input type="submit" value="Přihlásit se">
+    </form>
+
+    <p>
+    Nemáte ještě účet? <a href="register.html" class="text-stone-500 underline ">Zaregistrujte se!</a>
+    </p>
+    </main>
+
+        
+</body>
+</html>

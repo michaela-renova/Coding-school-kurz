@@ -1,0 +1,26 @@
+h1 {
+    color: blue;
+}
+
+#prvni_nadpis {
+    color: red;
+}
+#druhy_nadpis {
+    color: green;
+}
+.nadpis_kapitoly {
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+/* mnohem lepší použití */
+
+.blue {
+    color:blue;
+
+}
+
+.small {
+    font-size: small;
+}
