@@ -188,6 +188,7 @@ echo reverseWords($sentence);
 $array = [15, 19, 15, 5,];
 function hasDuplicates($array){
     if (count($array) !== count(array_unique($array))){
+        return true;
            };
 }
 
